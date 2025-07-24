@@ -250,7 +250,7 @@ spec:
         - name: revision
           value: reuse-builds
         - name: pathInRepo
-          value: task/buildah-oci-ta/0.4/buildah-remote-oci-ta.yaml
+          value: task/buildah-remote-oci-ta/0.4/buildah-remote-oci-ta.yaml
         resolver: git
       when:
       - input: $(tasks.init.results.build)
