@@ -32,6 +32,8 @@ spec:
     - linux/x86_64
   - name: dockerfile
     value: Dockerfile
+  - name: skip-checks
+    value: true
   pipelineSpec:
     description: |
       This pipeline is ideal for building multi-arch container images from a Containerfile while maintaining trust after pipeline customization.
@@ -51,8 +53,6 @@ spec:
           value: quay.io/konflux-ci/tekton-catalog/task-show-sbom:0.1@sha256:86c069cac0a669797e8049faa8aa4088e70ff7fcd579d5bdc37626a9e0488a05
         - name: kind
           value: task
-        - name: skip-checks
-         value: true
         resolver: bundles
     params:
     - description: Source Repository URL
