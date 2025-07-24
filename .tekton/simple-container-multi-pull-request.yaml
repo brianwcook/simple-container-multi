@@ -251,7 +251,6 @@ spec:
           value: reuse-builds
         - name: pathInRepo
           value: task/buildah-oci-ta/0.4/buildah-remote-oci-ta.yaml
-        - kind: task
         resolver: git
       when:
       - input: $(tasks.init.results.build)
